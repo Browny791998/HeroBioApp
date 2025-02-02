@@ -32,7 +32,7 @@ const App = () => {
     setError("");
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/search/${heroName}`
+        `https://hero-api-node.vercel.app/api/search/${heroName}`
       );
       if (response.data.results && response.data.results.length > 0) {
        
